@@ -1,0 +1,18 @@
+<div  class="flex  h-full justify-end">
+
+    <!-- <div class="w-[35vw] p-[20px] min-w-xs">
+        
+    </div> -->
+    <app-info class="fixed w-[30vw] top-[120px] left-[2.6vw]"/>
+
+    <div #rightContainerSpace class="w-[calc(65vw-18px)] h-[150vh] pr-5 pt-5">
+        <app-my-projects/>
+            @for (text of ['данные 1','данные 2']; track text) {
+                <app-ng-for-component [value]="text"></app-ng-for-component>
+            }
+    </div>
+
+</div>
+<style lang="css">
+
+</style>
