@@ -1,0 +1,25 @@
+
+    <div class="w-full border h-4.5 rounded-2xl overflow-hidden relative">
+        <div  [style]="`width: ${power()}%; background-color: color-mix(#02ff23, 40%, #ff0000);`"
+         class="bg-[#373744] flex items-center place-content-center text-xs h-full "></div>
+        <b class="absolute top-0 left-0 w-full flex place-content-center h-full text-xs">хорошо</b>
+    </div>
+
+
+
+<!-- <progress class="w-full " max="100" [value]="power()"></progress> -->
+
+<style lang="css">
+/* progress {
+  background-color: white;
+}
+progress::-webkit-progress-bar {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+} */
+progress::-webkit-progress-value {
+  background-color: color-mix(#02ff23 40%, #ff0000);
+}
+
+</style>

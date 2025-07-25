@@ -1,0 +1,103 @@
+[
+    {
+        "id": 0,
+        "name": "Образовательный портал",
+        "tools":[
+            {
+                "name": "vue3",
+                "link": "https://vuejs.org/guide/introduction.html"
+            },
+            {
+                "name": "nodejs",
+                "link": "https://nodejs.org/en"
+            }
+
+        ],
+        "links":[
+            {
+                "name": "gitHub",
+                "link": "https://github.com/NabiulinDamir/Proj_VOL/"
+            },
+            {
+                "name": "preview",
+                "link": "https://nabiulindamir.github.io/Proj_VOL/auth"
+            }
+
+        ],
+        "description": "Выпускная квалификационная работа на тему: «Разработка клиентской части модуля публикации материалов и организации учебного процесса для образовательной платформы» "
+    },
+    {
+        "id": 1,
+        "name": "Сайт резюме-портфолио",
+        "tools":[
+            {
+                "name": "Angular",
+                "link": "https://angular.dev/"
+            },
+            {
+                "name": "TypeScript",
+                "link": "https://www.typescriptlang.org/"
+            },
+            {
+                "name": "Tailwindcss",
+                "link": "https://tailwindcss.com/"
+            }
+
+        ],
+        "links":[
+            {
+                "name": "gitHub",
+                "link": "https://github.com/NabiulinDamir/Proj_VOL/"
+            },
+            {
+                "name": "preview",
+                "link": "https://nabiulindamir.github.io/Proj_VOL/auth"
+            }
+
+        ],
+        "description": "Одностраничный вебсайт, сделанный для изучения Angular, TypeScript и Tailwindcss"
+    },
+    {
+        "id": 2,
+        "name": "Дизайн интернет магазина",
+        "tools":[
+            {
+                "name": "figma",
+                "link": "https://www.figma.com/?ysclid=mdd2qeaq1c355827735"
+            }
+        ],
+        "links":[
+            {
+                "name": "project",
+                "link": "https://www.figma.com/design/sSi6xSO96XwBBqhDU5GE4N/Vuetify-Design-System---01-Style-Guide?node-id=0-1&p=f&t=eQ1rACPcrlurtQpd-0"
+            }
+        ],
+
+        "description": "Дизайн системы интернет магазина для самостоятельной работы в команде 3й курс."
+    },
+    {
+        "id": 3,
+        "name": "Desktop приложение",
+        "tools":[
+            {
+                "name": "C#",
+                "link": "https://learn.microsoft.com/ru-ru/dotnet/csharp/"
+            },
+            {
+                "name": "mySQL",
+                "link": "https://www.mysql.com/"
+            }
+
+        ],
+        "links":[
+            {
+                "name": "googleDrive",
+                "link": "https://drive.google.com/drive/folders/1opmEgLzSEz62wr8u-cqivrwfzx4BnUHy?usp=sharing"
+            }
+
+        ],
+        "description": "Курсовая работа на тему: «Разработка реляционной базы данных “Технический осмотр”» 2й курс."
+    }
+]
+    
+    
