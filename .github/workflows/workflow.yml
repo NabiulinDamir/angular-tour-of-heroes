@@ -6,35 +6,27 @@ on:
       - preview
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
+    - uses: actions/setup-node@v3
       with:
         node-version: '22'
-        cache: 'npm'
 
-    - name: Install Angular CLI
-      run: npm install -g @angular/cli
+    - run: npm install -g @angular/cli
+    - run: npm ci
+    - run: ng build --configuration production
+    - run: touch dist/angular-tour-of-heroes/browser/.nojekyll
 
-    - name: Install dependencies
-      run: npm ci
-
-    - name: Build project
-      run: |
-        ng build --configuration production
-        ls -la dist/angular-tour-of-heroes/browser/  # Проверка содержимого
-        touch dist/angular-tour-of-heroes/browser/.nojekyll
-
-    - name: Deploy to GitHub Pages
+    - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: dist/angular-tour-of-heroes/browser
-        publish_branch: gh-pages
-        keep_files: true  # Сохраняет предыдущие файлы
