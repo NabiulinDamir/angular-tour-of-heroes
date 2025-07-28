@@ -1,11 +1,11 @@
-<div  class="flex  h-full justify-end">
+<div  class="pc:flex pc:p-0 h-full w-full justify-end p-2 bg-[#e4e6e3]">
 
     <!-- <div class="w-[35vw] p-[20px] min-w-xs">
         
     </div> -->
-    <app-info class="fixed w-[30vw] top-[120px] left-[2.6vw]"/>
+    <app-info class="pc:fixed pc:w-[30vw] pc:top-[120px] pc:left-[1vw] w-[calc(100%-16px)] "/>
 
-    <div #rightContainerSpace class="w-[calc(65vw-18px)] pr-5 pt-5 pb-5 flex flex-col gap-7">
+    <div #rightContainerSpace class=" pc:w-[68vw] flex flex-col gap-7 pc:p-3 pt-3 ">
         
         @for (proj of data; track proj) {
             <app-my-project 

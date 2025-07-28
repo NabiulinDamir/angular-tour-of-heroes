@@ -3,49 +3,30 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - develop
+      - preview
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
+    - uses: actions/setup-node@v3
       with:
-        node-version: '18' 
+        node-version: '22'
 
-    - name: Change directory to project folder
-      run: |
-        echo "Changing directory to project folder..."
-        cd angular-tour-of-heroes
+    - run: npm install -g @angular/cli
+    - run: npm ci
+    - run: ng build --configuration production --base-href "/angular-tour-of-heroes/"
+    - run: touch dist/angular-tour-of-heroes/browser/.nojekyll
 
-    - name: Install Angular CLI
-      run: npm install -g @angular/cli
-
-    - name: Install dependencies
-      run: |
-        echo "Installing dependencies..."
-        cd angular-tour-of-heroes
-        ls -la
-        npm install
-
-    - name: Build project
-      run: |
-        cd angular-tour-of-heroes
-        ng build
-        touch .nojekyll
-
-    - name: Deploy to GitHub Pages
+    - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GH_PAGES_TOKEN }}
-        publish_dir: angular-tour-of-heroes/dist/angular-tour-of-heroes/browser
-        publish_branch: gh-pages  
-
-          
-          
-          
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: dist/angular-tour-of-heroes/browser
