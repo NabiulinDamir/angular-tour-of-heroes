@@ -22,7 +22,7 @@ jobs:
 
     - run: npm install -g @angular/cli
     - run: npm ci
-    - run: ng build --configuration production
+    - run: ng build --configuration production --base-href "/angular-tour-of-heroes/"
     - run: touch dist/angular-tour-of-heroes/browser/.nojekyll
 
     - name: Deploy
