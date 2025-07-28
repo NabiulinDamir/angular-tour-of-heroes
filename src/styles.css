@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-pc: 900px;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}
+
+/* * {
+    border: 1px solid red;
+}  */

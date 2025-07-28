@@ -20,7 +20,7 @@
             },
             {
                 "name": "preview",
-                "link": "https://nabiulindamir.github.io/Proj_VOL/auth"
+                "link": "https://nabiulindamir.github.io/angular-tour-of-heroes/"
             }
 
         ],
@@ -51,11 +51,11 @@
             },
             {
                 "name": "preview",
-                "link": "https://nabiulindamir.github.io/Proj_VOL/auth"
+                "link": "https://nabiulindamir.github.io/angular-tour-of-heroes/"
             }
 
         ],
-        "description": "Одностраничный вебсайт, сделанный для изучения Angular, TypeScript и Tailwindcss"
+        "description": "Одностраничный вебсайт, сделанный для изучения Angular, TypeScript и Tailwindcss. Написан полностью без использования нейронок."
     },
     {
         "id": 2,
