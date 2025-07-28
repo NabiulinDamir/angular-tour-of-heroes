@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18' 
+        node-version: '22' 
 
     - name: Install Angular CLI
       run: npm install -g @angular/cli
@@ -24,7 +24,6 @@ jobs:
     - name: Install dependencies
       run: |
         echo "Installing dependencies..."
-        ls -la
         npm install
 
     - name: Build project
