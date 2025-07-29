@@ -2,6 +2,10 @@
     {
         "id": 0,
         "name": "Образовательный портал",
+        "img":{
+            "src":"/assets/img/VEP.png",
+            "href":"/assets/img/VEP.png"
+        },
         "tools":[
             {
                 "name": "vue3",
@@ -10,17 +14,21 @@
             {
                 "name": "nodejs",
                 "link": "https://nodejs.org/en"
+            },
+            {
+                "name": "FSD",
+                "link": "https://feature-sliced.github.io/documentation/ru/docs/get-started/overview"
             }
 
         ],
         "links":[
             {
                 "name": "gitHub",
-                "link": "https://github.com/NabiulinDamir/Proj_VOL/"
+                "link": "https://github.com/NabiulinDamir/Proj_VOL/tree/develop"
             },
             {
-                "name": "preview",
-                "link": "https://nabiulindamir.github.io/angular-tour-of-heroes/"
+                "name": "preview(огрызок без БД)",
+                "link": "https://nabiulindamir.github.io/Proj_VOL/"
             }
 
         ],
@@ -29,6 +37,10 @@
     {
         "id": 1,
         "name": "Сайт резюме-портфолио",
+        "img":{
+            "src":"/assets/img/portfolIo.png",
+            "href":"/assets/img/portfolIo.png"
+        },
         "tools":[
             {
                 "name": "Angular",
@@ -60,6 +72,10 @@
     {
         "id": 2,
         "name": "Дизайн интернет магазина",
+        "img":{
+            "src":"/assets/img/Poisen.png",
+            "href":"/assets/img/Poisen.png"
+        },
         "tools":[
             {
                 "name": "figma",
@@ -78,6 +94,10 @@
     {
         "id": 3,
         "name": "Desktop приложение",
+        "img":{
+            "src":"/assets/img/maitenence.png",
+            "href":"/assets/img/maitenence.png"
+        },
         "tools":[
             {
                 "name": "C#",

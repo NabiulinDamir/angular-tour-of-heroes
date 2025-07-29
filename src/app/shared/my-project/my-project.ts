@@ -12,6 +12,8 @@ export class MyProject {
   links = input([{name: "", link: ''}]);
   description = input('');
   tools = input([{name: "", link: ''}])
+  image = input({src:"", href:""})
+  
+  // text = (JSON.stringify(this.tools()));
 
-  text = (JSON.stringify(this.tools()));
 }
