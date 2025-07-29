@@ -7,5 +7,11 @@ import { Component, input } from '@angular/core';
 })
 export class Chart {
   power = input(0)
-  pColor = ""
+  
+  pName(){
+    if(this.power() > 75)     {return "превосходно"}
+    else if(this.power() > 50){return "хорошо"}
+    else if(this.power() > 25){return "любитель"}
+    return "начинающий"
+  }
 }

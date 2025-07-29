@@ -1,18 +1,22 @@
-<div class="flex min-h-[150px] gap-2" [class]='id() % 2 ? "flex-row" : "pc:flex-row-reverse"' >
-    <div #img class="bg-amber-50  pc:size-[150px] size-[100px]"></div>
+<div class="flex min-h-[150px] gap-2 items-center " [class]='id() % 2 ? "flex-row" : "pc:flex-row-reverse"' >
+    <div #img class="2xl:w-[250px] pc:w-[150px] w-[100px] h-full flex items-center">
+        <a [href]="image().href" target="_blank"><img class="h-min" [src]="image().src" alt="image"></a>
+    </div>
+
+    
 
     <div class="h-full max-w-[400px] w-full">
         <div class="text-2xl">  {{ title() }}  </div>
         <div>
             <b>Инструменты: </b>   
             @for (tool of tools(); track $index) {
-                <a class="hover:text-blue-700 hover:underline" [href]="tool.link">{{tool.name}}@if($index != tools().length-1) {<a>, </a>}</a>
+                <a class="hover:text-blue-700 hover:underline" target="_blank" [href]="tool.link">{{tool.name}}@if($index != tools().length-1) {<a>, </a>}</a>
             } 
         </div>
         <div>
             <b>Сылки: </b>   
             @for (item of links(); track $index) {
-                <a class="hover:text-blue-700 hover:underline" [href]="item.link">{{item.name}}@if($index != links().length-1) {<a>, </a>}</a>
+                <a class="hover:text-blue-700 hover:underline" target="_blank" [href]="item.link">{{item.name}}@if($index != links().length-1) {<a>, </a>}</a>
             } 
         </div>
 

@@ -3,17 +3,21 @@
         "name": "Набиулин Дамир Равилевич",
         "age": "22 года",
         "education": "Диплом бакалавра ПНИПУ по направлению 09.03.04 Программная инженерия",
-        "work_experience": "Нет"
+        "work_experience": "Нет",
+        "git":{
+            "name": "GitHub",
+            "link": "https://github.com/NabiulinDamir"
+        }
     },
     "tools_experience":{
         "frameworks":[
             {
                 "name":"vue",
-                "power": 40
+                "power": 70
             },
             {
                 "name":"angular",
-                "power": 15
+                "power": 10
             }
         ],
     
@@ -21,35 +25,35 @@
         [
             {
                 "name":"html",
-                "power": 40
+                "power": 65
             },
             {
                 "name":"css",
-                "power": 15
+                "power": 60
             },
             {
                 "name":"js",
-                "power": 32
+                "power": 60
             },
             {
                 "name":"ts",
-                "power": 63
+                "power": 15
             },
             {
                 "name":"C#",
-                "power": 85
+                "power": 10
             },
             {
                 "name":"C++",
-                "power": 28
+                "power": 10
             },
             {
                 "name":"Python",
-                "power": 25
+                "power": 30
             },
             {
                 "name":"SQL",
-                "power": 84
+                "power": 10
             }
         ]
     }

@@ -1,15 +1,17 @@
-<div class="bg-[#f8f8f8] min-w-[300px] grid grid-flow-row grid-rows-2 grid-cols-5 gap-2 p-2 rounded-sm shadow-md">
+<div class="bg-[#f8f8f8] min-w-[300px] h-min grid grid-flow-row grid-rows-5 grid-cols-5 gap-2 p-2 rounded-sm shadow-md">
 
-    <div class="col-span-2 bg-[url('assets/img/image.png')] bg-cover bg-center"></div>
-    <div class="col-span-3">
+    <div class="col-span-2 row-span-2 bg-[url('assets/img/image.png')] bg-cover bg-center "></div>
+    <div class="col-span-3 row-span-2">
         <div><b>ФИО: </b>{{ userData.user.name }} </div>
         <div><b>Возраст: </b>{{ userData.user.age }} </div>
         <div><b>Образование: </b> {{ userData.user.education }} </div> 
         <div><b>Опыт работы: </b> {{ userData.user.work_experience }} </div>
+        <div><b>Гит: </b> <a class="hover:text-blue-700 hover:underline" [href]="userData.user.git.link">{{ userData.user.git.name }} </a></div>
+
     </div>
-    <div class="col-span-full">
-        <!-- <h1 class="text-xl">Фреймвоки:</h1> -->
-        
+    <div class="col-span-full row-span-3">
+
+        <!-- <h1 class="text-xl">Фреймворки:</h1> -->
         @for (item of userData.tools_experience.frameworks; track $index) {
             <div class="grid grid-cols-2 items-center">
                 <div>{{item.name}}: </div>
