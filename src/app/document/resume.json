@@ -7,17 +7,18 @@
         "git":{
             "name": "GitHub",
             "link": "https://github.com/NabiulinDamir"
-        }
+        },
+        "info": ""
     },
     "tools_experience":{
         "frameworks":[
             {
                 "name":"vue",
-                "power": 60
+                "power": 55
             },
             {
                 "name":"angular",
-                "power": 10
+                "power": 7
             }
         ],
     
@@ -25,15 +26,15 @@
         [
             {
                 "name":"html",
-                "power": 60
+                "power": 57
             },
             {
                 "name":"css",
-                "power": 60
+                "power": 51
             },
             {
                 "name":"js",
-                "power": 52
+                "power": 53
             },
             {
                 "name":"ts",
