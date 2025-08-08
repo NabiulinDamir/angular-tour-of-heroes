@@ -1,6 +1,6 @@
 <div class="flex min-h-[150px] gap-2 items-center " [class]='id() % 2 ? "flex-row" : "pc:flex-row-reverse"' >
     <div #img class="2xl:w-[250px] pc:w-[150px] w-[100px] h-full flex items-center">
-        <a [href]="`/assets/img/${image().href}`" target="_blank"><img class="h-min" [src]="`/assets/img/${image().name}`" alt="image"></a>
+        <a [href]="'assets/img/' + image().name" target="_blank"><img class="h-min" [src]="'assets/img/' + image().name" alt="image"></a>
     </div>
 
     
