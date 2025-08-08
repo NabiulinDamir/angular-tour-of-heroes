@@ -3,8 +3,8 @@
         "id": 0,
         "name": "Образовательный портал",
         "img":{
-            "src":"/assets/img/VEP.png",
-            "href":"/assets/img/VEP.png"
+            "name":"VEP.png",
+            "href":"VEP.png"
         },
         "tools":[
             {
@@ -38,8 +38,8 @@
         "id": 1,
         "name": "Сайт резюме-портфолио",
         "img":{
-            "src":"/assets/img/portfolIo.png",
-            "href":"/assets/img/portfolIo.png"
+            "name":"portfolIo.png",
+            "href":"portfolIo.png"
         },
         "tools":[
             {
@@ -73,8 +73,8 @@
         "id": 2,
         "name": "Дизайн интернет магазина",
         "img":{
-            "src":"/assets/img/Poisen.png",
-            "href":"/assets/img/Poisen.png"
+            "name":"Poisen.png",
+            "href":"Poisen.png"
         },
         "tools":[
             {
@@ -95,8 +95,8 @@
         "id": 3,
         "name": "Desktop приложение",
         "img":{
-            "src":"/assets/img/maitenence.png",
-            "href":"/assets/img/maitenence.png"
+            "name":"maitenence.png",
+            "href":"maitenence.png"
         },
         "tools":[
             {
