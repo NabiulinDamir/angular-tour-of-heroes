@@ -1,4 +1,5 @@
 import { Component, HostListener  } from '@angular/core';
+import resume from '../../document/resume.json'
 
 @Component({
   selector: 'my-header',
@@ -8,6 +9,8 @@ import { Component, HostListener  } from '@angular/core';
 export class MyHeader {
   headerImageFixed = false;
 
+  email = resume.user.email
+  number = resume.user.number
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event:any) {
