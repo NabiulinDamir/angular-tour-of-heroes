@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-pc: 900px;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}
+
+.dark-theme .theme {
+  color: rgb(0, 0, 0);
+  border: 1px solid mdnightblue;
+  background: rgb(131, 131, 131);
+}
+
+.light-theme .theme {
+  color: midnightblue;
+  border: 1px solid mdnightblue;
+  background: white;
+}
+/* * {
+    border: 1px solid red;
+}  */

@@ -1,0 +1,28 @@
+<div  class="pc:flex pc:p-0 h-full w-full justify-end p-2 bg-[#e4e6e3] text"
+    [class]="{'light-theme': theme === 'light', 'dark-theme': theme === 'dark'}">
+
+    <!-- <div class="w-[35vw] p-[20px] min-w-xs">
+        
+    </div> -->
+    <app-info class="pc:fixed pc:w-[30vw] pc:top-[120px] pc:left-[1vw] w-[calc(100%-16px)] "/>
+
+    <div #rightContainerSpace class=" pc:w-[68vw] flex flex-col gap-7 pc:p-3 pt-3 ">
+        
+        @for (proj of data; track proj) {
+            <app-my-project 
+                [id]="proj.id"
+                [title]="proj.name" 
+                [links]="proj.links"
+                [description]="proj.description"
+                [tools]="proj.tools"
+                [image]="proj.img"
+                >
+            </app-my-project >
+        }
+    </div>
+    
+
+</div>
+<style lang="css">
+
+</style>
