@@ -10,6 +10,6 @@ import { MyHeader } from './shared/my-header/my-header';
 export class App {
   protected title = 'angular-tour-of-heroes';
 
-
+  a = "hui"
 
 }
